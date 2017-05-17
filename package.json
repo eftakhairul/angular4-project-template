@@ -1,0 +1,47 @@
+{
+  "name": "angular4-project-template",
+  "version": "1.0.0",
+  "description": "My own quick template for angular 4",
+  "main": "./dist/index.js",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "webpack --progress",
+    "tsc-build": "tsc --rootDir src --outDir dist",
+    "postinstall": "typings install",
+    "serve:local": "webpack-dev-server --inline --progress",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eftakhairul Islam <eftakhairul@gmail.com> (https://eftakhairul.com)",
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/eftakhairul/angular4-project-template"
+  },
+    "keywords": [
+    "angular",
+    "angular4",
+    "template",
+    "project"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@angular/common": "~4.0.0",
+    "@angular/compiler": "~4.0.0",
+    "@angular/core": "~4.0.0",
+    "@angular/forms": "~4.0.0",
+    "@angular/http": "~4.0.0",
+    "@angular/platform-browser": "~4.0.0",
+    "@angular/platform-browser-dynamic": "~4.0.0",
+    "@angular/router": "~4.0.0",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "5.0.1",
+    "zone.js": "^0.8.4"
+  },
+  "devDependencies": {
+    "ts-loader": "^2.0.3",
+    "typescript": "^2.3.2",
+    "typings": "^2.1.1",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}

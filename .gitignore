@@ -1,0 +1,11 @@
+dist/
+node_modules/
+.idea
+typings/
+
+*.js.map
+src/**/*.js
+
+jspm_packages
+npm-debug.log
+debug.log
