@@ -6,6 +6,7 @@
   "scripts": {
     "prebuild": "rm -rf dist",
     "build": "webpack --progress",
+    "build:prod": "webpack -p --progress",
     "tsc-build": "tsc --rootDir src --outDir dist",
     "postinstall": "typings install",
     "serve:local": "webpack-dev-server --inline --progress",
