@@ -1,6 +1,6 @@
 var webpack  = require('webpack');
 var path = require('path');
-//var HtmlWebpackPlugin = require('html-webpack-plugin');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports =  {
     entry: './src/main',
@@ -17,5 +17,10 @@ module.exports =  {
                    // all files with a `.ts` or `.tsx` extension will be handled by `ts-loader`
                 { test: /\.tsx?$/, loader: 'ts-loader' }
         ]
-    } 
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: path.join(__dirname, 'src/index.html')
+        })
+    ]  
 }
