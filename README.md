@@ -39,4 +39,4 @@ git checkout dummy-app
 
 #### Authors ####
 
-[Md. Eftakhairul Islam](http://eftakhairul.com) Email: eftakhairul [at] gmail [dot] com
+[Md. Eftakhairul Islam](https://eftakhairul.com) Email: eftakhairul [at] gmail [dot] com
