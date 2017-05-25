@@ -5,6 +5,7 @@
   "main": "./dist/index.js",
   "scripts": {
     "prebuild": "rm -rf dist",
+    "prebuild:prod": "npm run prebuild",
     "build": "webpack --progress",
     "build:prod": "webpack -p --progress",
     "tsc-build": "tsc --rootDir src --outDir dist",

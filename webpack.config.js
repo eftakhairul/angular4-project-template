@@ -6,7 +6,7 @@ module.exports =  {
     entry: './src/main',
     output: {
         path: path.join(__dirname, 'dist'), 
-        filename: 'app.bundle.js'
+        filename: './app.bundle.js'
     },
     resolve: {
         // Add `.ts` and `.tsx` as a resolvable extension.
@@ -20,7 +20,9 @@ module.exports =  {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: path.join(__dirname, 'src/index.html')
+            filename: 'index.html',
+            inject: 'body',
+            template: path.resolve(__dirname, 'src', 'index.html')
         })
     ]  
 }
