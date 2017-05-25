@@ -10,12 +10,12 @@ Clone the project
 $ git clone https://github.com/eftakhairul/angular4-project-template
 ```
 
-Get inside the project by `cd angular4-project-template`  adn then you have to run install commnand
+Get inside the project by `cd angular4-project-template` and then you have to run install command
 ```sh
 $ npm install 
 ```
 
-After downloadign all required packages it also tiggers for typing install itself.
+After downloading all required packages it also triggers for typing install itself.
 
 Run the project locally
 ```sh
@@ -25,6 +25,11 @@ $ npm run serve:local
 For Production build
 ```sh
 $ npm run build
+```
+
+For Production build with ugly and minified JS
+```sh
+$ npm run build:prod
 ```
 
 Source code directory
