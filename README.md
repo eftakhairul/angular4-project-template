@@ -55,5 +55,4 @@ docker run -d -p 80:80 angular4-app:v1
 Now you can visit: http://localhost from any browser.
 
 #### Authors ####
-
-[Md. Eftakhairul Islam](https://eftakhairul.com) Email: eftakhairul [at] gmail [dot] com
+[Md Eftakhairul Islam](https://eftakhairul.com) Email: eftakhairul [at] gmail [dot] com
