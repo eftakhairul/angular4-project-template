@@ -1,0 +1,19 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" [routerLink]="['/home']">Home</a>
+            <a class="navbar-brand" [routerLink]="['/hero']">Heroes</a>
+        </div>
+    </div>
+</nav>
+<br/>
+<br/>
+<br/>
+<div class="container">
+
+    <div class="starter-template">
+        <span>{{ title }}</span>
+        <router-outlet></router-outlet>
+    </div>
+
+</div>

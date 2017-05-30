@@ -1,15 +1,11 @@
 import { Component } from '@angular/core';
 
+
 @Component({
     selector: 'my-app',
-    template: ` <h1>{{ title }}</h1>
-                <nav>
-                    <a [routerLink]="['/home']">Home</a>
-                    <a [routerLink]="['/hero']">Heroes</a>
-                </nav>
-                <router-outlet></router-outlet>`
+    templateUrl: './src/app/views/app.component.html',
 })
 export class AppComponent  {
 
-    title: string = "Welcome to our app";
+    title: string = "Welcome to our Angular 4 app";
 }
