@@ -1,0 +1,19 @@
+<h2>My Github</h2>
+ <form #f="ngForm" (ngSubmit)="onSubmit()">
+    <p>
+        <label>Github Username:</label>
+        <input type="text" [(ngModel)]="github.username" name="username">
+    </p>
+    <p>
+        <button type="submit">Submit</button>
+    </p>
+ </form>
+
+<div *ngIf="repos">
+  <ul >
+    <li *ngFor="let repo of repos">
+      <p>{{ repo.name}}</p>
+    </li>
+  </ul>
+</div>
+
