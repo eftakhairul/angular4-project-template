@@ -10,6 +10,8 @@ import { HeroesComponent } from './heroes.component';
 import { DashboardComponent } from './dashboard.component';
 import { GithubComponent } from './github.component';
 
+import { CapitalizePipe } from './pipes/capitalize.pipe';
+
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard',  component: DashboardComponent },  
@@ -23,7 +25,7 @@ const routes: Routes = [
                   RouterModule.forRoot(routes, {useHash: true}),
                   HttpModule,
                   JsonpModule],
-  declarations: [ AppComponent, HeroDetailComponent, HeroesComponent, DashboardComponent, GithubComponent ],
+  declarations: [ AppComponent, HeroDetailComponent, HeroesComponent, DashboardComponent, GithubComponent, CapitalizePipe ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
